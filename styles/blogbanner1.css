@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #4a7c1b;
+    z-index: 1;
+  }
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card {
+    position: relative; /* Torna a div um contêiner de posicionamento */
+    display: flex; /* Utiliza flexbox para organizar os elementos */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+  }
+  
+  .card img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: auto;
+  }
+  
+  .card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    width: 80%; /* Ajusta a largura do texto */
+    height: 100%; /* Ajuste a altura conforme necessário */
+    overflow-y: auto; /* Adiciona rolagem vertical */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro para melhor contraste */
+    color: white;
+  }
+
+
+
+.newsletter {
+    background-color: #111;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+footer {
+    padding: 0px;
+    text-align: center;
+  }
+
+.footer {
+    padding: 50px;
+    background-color: #111;
+    text-align: center;
+  }
+  form input, form button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+  }form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }.footer-image {
+   
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    @media (max-width: 768px) {
+        .footer-image img {
+          height: 50vh; 
+        }
+
+
+  }
+  .footer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+

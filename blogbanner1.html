@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/blogbanner1.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/_logo.jpg"Logo">
+            <img src="img/_logo.jpg" atl="Logo">
         </div>
         <nav>
+            <div class="line"></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="time.html">Sobre Nós</a></li>
@@ -26,12 +27,14 @@
     <main>
         <section class="blog-banner">
             <h1>BLOG</h1>
+            <div class="line"></div>
 
                 <section class="banner">
-                    <div class="card">
-                        <h2>Principais Gêneros de Jogos e Suas Características</h2>
-                        <p>20 de Out de 2024</p>
+                    <div class="">
+                        <h2>As 08 atitudes que todo Gamer Profissional deve ter.</h2>
+                        <p>10 de Out de 2024</p>
                         <img src="img/Blog.banner 1_img1.png" alt="Banner atitudes do gamer profissional">
+                        <div class="card-texto">
                         <p>Quando se fala em jogos eletrônicos, é comum ouvir termos e siglas que parecem saídos de 
                         uma sopa de letrinhas, como FPS, PVP, RTS ou MMORPG. Estas siglas são
                          alguns dos gêneros de jogos mais populares, ou seja, os tipos dos games, como luta,
@@ -64,13 +67,17 @@
                             </section>
 
                             <footer>
-                                <img src="img/Footer.png" alt="banner footer">
-                                <h2>Inscreva-se para receber os novos posts do blog</h2>
-                                <form>
-                                    <input type="text" placeholder="Nome">
-                                    <input type="email" placeholder="Email">
-                                    <button type="submit">Enviar</button>
-                                </form>
-                            </footer>
+                                <div class="footer-image">
+                                  <img src="img/Footer.jpg"alt="banner footer">
+                                  <div class="footer-text">
+                                    <h2>Inscreva-se para receber os novos posts do blog</h2>
+                                    <form action="https:http://127.0.0.1:3000/Projeto-Integrador-Proz/blog.html?/processar-inscricao" method="POST">
+                                      <input type="text" placeholder="Nome">
+                                      <input type="email" placeholder="Email">
+                                      <button type="submit">Enviar</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </footer>
                         </body>
                         </html>
