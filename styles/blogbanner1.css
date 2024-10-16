@@ -44,31 +44,71 @@ nav ul li a {
     text-decoration: none;
 }
 
+.blog-banner {
+    text-align:center;
+    margin-top: 20px;
+}
+
+.blog-banner h1 {
+    font-size: 3em;
+    
+}
+
+.blog-banner h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.blog-banner p{
+    margin-top: 10px;
+    text-align: center;
+}
+
 .card {
-    position: relative; /* Torna a div um contêiner de posicionamento */
-    display: flex; /* Utiliza flexbox para organizar os elementos */
-    flex-direction: column; /* Empilha os elementos verticalmente */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
   }
   
-  .card img {
-    width: 100%; /* Imagem ocupa toda a largura */
-    height: auto;
-  }
-  
+.imagem {
+    width: 600px;
+    height: 300px;
+    padding: 10px; ;
+}
+
   .card-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o texto */
-    width: 80%; /* Ajusta a largura do texto */
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ocupa toda a largura do container */
     height: 100%; /* Ajuste a altura conforme necessário */
-    overflow-y: auto; /* Adiciona rolagem vertical */
+    overflow-y: auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro para melhor contraste */
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    text-align: justify;
   }
 
+  .btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
+.btn:hover {
+    background-color: #218838;
+}
 
 .newsletter {
     background-color: #111;
@@ -76,6 +116,7 @@ nav ul li a {
     text-align: center;
     margin-top: 40px;
 }
+
 .newsletter h2 {
     margin-bottom: 20px;
 }
@@ -93,6 +134,7 @@ footer {
     padding: 10px;
     margin: 10px 0;
     width: 100%;
+    
   }form button {
     background-color: #4CAF50;
     color: #fff;
@@ -108,7 +150,6 @@ footer {
           height: 50vh; 
         }
 
-
   }
   .footer-text {
     position: absolute;
@@ -118,4 +159,3 @@ footer {
     color: white;
     text-align: center;
   }
-
