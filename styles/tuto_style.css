@@ -1,3 +1,48 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color:black;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #4a7c1b;
+    z-index: 1;
+  }
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 /* Seção do banner hero */
 .hero-section {
     position: relative;
@@ -45,22 +90,18 @@
     margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    padding: 50px;
-    background-color: #111;
-    text-align: center;
+.footer {
+    margin: 0;
+   padding:0 ;
+   box-sizing: border-box;
+   background-color: #000;
+   text-align: center;
 }
 
-form input, form button {
-    padding: 10px;
-    margin: 10px 0;
+.footer-image {
     width: 100%;
-}
+    height: auto
+   }
+    
 
-form button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
+   

@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color:black;
     padding: 0%;
     display: flex;
     justify-content: space-between;
@@ -73,6 +73,7 @@ nav ul li a {
     padding:30px;
     max-width: 32000px;
   }
+ 
 
 .post-card {
     text-align: center;
@@ -83,9 +84,10 @@ nav ul li a {
     object-fit: cover
   }
 
+  
 .post-card img {
     width: 100%; /* Mantém a proporção da imagem */
-  height: auto;
+   height: auto;
   border-radius: 10px;
 }
 
@@ -212,6 +214,7 @@ nav ul li a {
     background-color: #218838;
 }
 
+
 .newsletter {
     background-color: #111;
     padding: 30px;
@@ -222,11 +225,6 @@ nav ul li a {
 .newsletter h2 {
     margin-bottom: 20px;
 }
-footer {
-    padding: 0px;
-    text-align: center;
-  }
-
 .footer {
     padding: 50px;
     background-color: #111;
@@ -241,17 +239,17 @@ footer {
     color: #fff;
     border: none;
     cursor: pointer;
-  }.footer-image {
-   
+  }
+
+  .footer-image {
     max-width: 100%;
     height: auto;
     position: relative;
+    
     @media (max-width: 768px) {
-        .footer-image img {
+    .footer-image img {
           height: 50vh; 
         }
-
-    
   }
   .footer-text {
     position: absolute;
