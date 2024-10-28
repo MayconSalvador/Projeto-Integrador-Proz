@@ -120,7 +120,7 @@ nav ul li:hover .submenu {
 .highlight-posts h1{
     position: absolute;
     top: 20%;
-    left: 25%;
+    left: 33%;
     color: white;
     text-align:center;
     padding: 0px;
@@ -128,7 +128,7 @@ nav ul li:hover .submenu {
     font-size:  3.5em;em
 }
 .highlight-posts   .palavra-espacada {
-     letter-spacing: 53px;
+     letter-spacing: 65px
 
 
 }
@@ -153,7 +153,7 @@ nav ul li:hover .submenu {
 
   
 .post-card img {
-    width: 100%; /* Mantém a proporção da imagem */
+   width: 100%; /* Mantém a proporção da imagem */
    height: auto;
   border-radius: 10px;
 }
