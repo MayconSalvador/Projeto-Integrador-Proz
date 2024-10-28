@@ -53,13 +53,34 @@ nav ul li a {
     font-weight: bold;
 }
 
-.submenu {
+.submenu1 {
     background:#111;  
     text-decoration-color:#28a745;
 }
-.submenu ul li a {
+.submenu1 ul li a {
     color:white;
 }
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1;
+    left: 60; /* Posiciona o submenu à esquerda do item pai */
+    opacity: 0; /* Esconde o submenu inicialmente */
+    transition: opacity 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.submenu .divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+nav ul li:hover .submenu {
+    display: block;
+    opacity: 1; /* Mostra o submenu */
+}
+
 
 .container {
     display: flex;

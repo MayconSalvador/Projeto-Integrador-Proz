@@ -49,6 +49,31 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1;
+    left: 60 px ; /* Posiciona o submenu à esquerda do item pai */
+    opacity: 0; /* Esconde o submenu inicialmente */
+    transition: opacity 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+.submenu .divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+.submenu .divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+nav ul li:hover .submenu {
+    display: block;
+    opacity: 1; /* Mostra o submenu */
+}
+
 
 .blog-banner {
     text-align:justify;
@@ -200,20 +225,6 @@ nav ul li a {
     background-color: #218838;
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
-
-.btn {
-    display: inline-block;
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #218838;
-}
-
 
 .newsletter {
     background-color: #111;
