@@ -69,8 +69,6 @@ nav ul li:hover .submenu {
     text-align: center;
     position: relative;
 
-   
-   
 }
 
 .hero h1 {
@@ -149,7 +147,7 @@ nav ul li:hover .submenu {
     border-radius: 10px;
     position: relative;
     flex-grow: 1;  position: relative;
-    flex-grow: 1 /* Garante que as imagens ocupem o espaço disponível igualmente */
+    flex-grow: 1 ;/* Garante que as imagens ocupem o espaço disponível igualmente */
     object-fit: cover
   }
 
