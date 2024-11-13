@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 html,body
-{min-block-size: width 100px; ;
-}
-header {
-    color: green;
-    padding: 10px;
+{min-block-size: width 100px; 
 }
 
 body {
@@ -27,7 +23,12 @@ header {
     align-items: center;
     position: relative
 }
-
+.logo img{
+ border-radius: 70%;
+ object-fit: cover;
+ width:80px;
+ min-height: 80px;
+}
 .line {
     position: absolute;
     bottom: 0;
@@ -55,7 +56,7 @@ nav ul li a {
 
 .submenu1 {
     background:#111;  
-    text-decoration-color:#28a745;
+
 }
 .submenu1 ul li a {
     color:white;
@@ -81,31 +82,38 @@ nav ul li:hover .submenu {
     opacity: 1; /* Mostra o submenu */
 }
 
-
 .container {
     display: flex;
     justify-content:space-between; /* Alinha as colunas horizontalmente */
-    max-width: 960px;
-    margin: 0 auto;
-    margin-top:40px;
+    margin-top:10px ;
+    margin-left:300px;
+
   }
   
 .main-content {
-    flex:28; /* Aloca mais espaço para o conteúdo principal */
     display:flex;
     flex-direction: column;
   }
 .main-content img{
     max-width: 70%;
-    max-height:300px;
-    margin-bottom:10px ;
-    margin-top:40px;
+    max-height:25%;
+    margin-bottom:10px;
+    margin-top:10px;
      
 }
 .main-content p {
     text-align:justify;
     max-width:70%; 
-    margin-bottom: 15px;
+    margin-bottom:15px;
+    margin-top:5px ;
+
+   }
+
+.main-content h2{
+  text-align:center;
+  margin-top:10px;
+  max-width:70%; 
+  text-decoration: double 20px;;
    }
 
 .main-content h3{
@@ -114,15 +122,16 @@ nav ul li:hover .submenu {
     max-width:70%; 
 }
   .sidebar {
-    flex: 1; /* Aloca menos espaço para a sidebar */
+    flex: 1 1 10px; /* Grow -(quanto vai crescer)  , Shrink (quanto vai dimunuir _, basis (tamamno base de cada item */
     display:flex;
-    grid-template-columns:  1fr;
     flex-direction: column;
-    align-items: center;
-    display: grid;
     background-color:#218838;
     max-height: 920px ;
-   
+    width: 240px;
+    height: 100%;
+    top: 0;
+    align-items: flex-start;
+  
   }
 
   /* Estilos adicionais para ajustar o layout e o conteúdo */
@@ -146,8 +155,10 @@ nav ul li:hover .submenu {
   }
 
 .sidebar img {
-    max-width:100%;
-    height: auto;
+    width: 100px;;
+    min-height: 50 px;
+    object-fit: cover;
+   
   }
 
 .newsletter {
