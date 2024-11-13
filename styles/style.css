@@ -18,6 +18,12 @@ header {
     align-items: center;
     position: relative;
     }
+    .logo img{
+        border-radius: 70%;
+        object-fit: cover;
+        width:80px;
+        min-height: 80px;
+       }
     .line {
         position: absolute;
         bottom: 0;
