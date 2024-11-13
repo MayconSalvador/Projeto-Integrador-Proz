@@ -52,6 +52,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+
 }
 
 .submenu1 {
@@ -93,6 +94,7 @@ nav ul li:hover .submenu {
 .main-content {
     display:flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 .main-content img{
     max-width: 70%;
@@ -126,8 +128,7 @@ nav ul li:hover .submenu {
     display:flex;
     flex-direction: column;
     background-color:#218838;
-    max-height: 920px ;
-    width: 240px;
+     width: 240px;
     height: 100%;
     top: 0;
     align-items: flex-start;
@@ -201,7 +202,7 @@ footer {
   }
     @media (max-width: 768px) {
         .footer-image img {
-          height: 50vh; 
+          height: 5vh; 
  }
 
   }
@@ -213,3 +214,4 @@ footer {
     color: white;
     text-align: center;
   }
+  
