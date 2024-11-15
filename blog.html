@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Posts em Destaque</title>
     <link rel="stylesheet" href="styles/blog.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -99,21 +100,20 @@
                         ajudam empresas a investir de forma mais assertiva na indústria de games, 
                         contribuindo para o crescimento do setor.</p>
                         <a href="blogbanner4.html" class="btn">Saiba Mais</a>
-
             </div>
             </div>
-
             </section>
-
             <footer>
                 <div class="footer-image">
                   <img src="img/Footer.jpg"alt="banner footer">
                   <div class="footer-text">
                     <h2>Inscreva-se para receber os novos posts do blog</h2>
-                    <form action="https:http://127.0.0.1:3000/Projeto-Integrador-Proz/blog.html?/processar-inscricao" method="POST">
-                      <input type="text" placeholder="Nome">
-                      <input type="email" placeholder="Email">
-                      <button type="submit">Enviar</button>
+                    <form action= "Formulário inscrinção blog" posts method ="POST">
+                    <input type="text" id= "nome" placeholder="*Nome">
+                    <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
+                    <input type="email" id="email" placeholder="*Email">
+                    <p id="email-helper" class="helper-text"> Mensagem de ajuda</p>
+                     <button type="submit">Enviar</button>
                     </form>
                   </div>
                 </div>
