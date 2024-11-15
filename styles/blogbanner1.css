@@ -128,11 +128,11 @@ nav ul li:hover .submenu {
     display:flex;
     flex-direction: column;
     background-color:#218838;
-     width: 240px;
+    width: 240px;
     height: 100%;
     top: 0;
     align-items: flex-start;
-  
+    position: sticky;  
   }
 
   /* Estilos adicionais para ajustar o layout e o conteúdo */
