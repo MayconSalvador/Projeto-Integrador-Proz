@@ -159,59 +159,107 @@ nav ul li:hover .submenu {
     width: 100px;;
     min-height: 50 px;
     object-fit: cover;
-   
   }
 
-.newsletter {
-    background-color: #111;
-    padding: 40px;
-    text-align: center;
-    margin-top:40px;
-}
-
-.newsletter h2 {
-    margin-bottom: 20px;
-}
 footer {
     padding: 0px;
     text-align: center;
   }
-
-.footer {
-    padding: 40px;
+   .footer {
+    padding: 50px;
     background-color: #111;
     text-align: center;
   }
-  form input, form button {
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    
-  }form button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .footer-image {
-   
-    max-width: 100%;
-    height: auto;
-    position: relative;
-  }
-    @media (max-width: 768px) {
-        .footer-image img {
-          height: 5vh; 
- }
 
-  }
-  .footer-text {
+ .form{
+    border-radius: 14px;
+    width:100%;
+    margin: 10px;
+    max-width: 600px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-align: center;
+    overflow: hidden;
+}
+    
+.header-form{
+  text-align: center;  
+  margin: 10px 0;
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+.form{
+      padding: 15px;
+ }
+  
+.form-group {
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  position: relative;
+}
+  
+  .form-group label{
+      display:inline-block;
+      margin-bottom: 4px;
+}
+  
+.form-group input{
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1 rem;
+    border:1px  solid #ccc;
+
+ }
+
+.form-group a {
+bottom:-8px ;
+left: 0;
+position: absolute;
+visibility: hidden;
+}
+
+.form button{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
   }
+
+.footer-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+    @media (max-width: 768px) {
+.footer-image img {
+          height: 50vh; 
+ }
+}
+
+  
+  /* ---------- Estilos dinâmicos ---------- */
+
+
+.form-group.error input{
+    border: 1px solid #ff3b25;
+    visibility: visible;
+}
+
+.form-group.error a {
+    color: #ff3b25;
+    visibility: visible;
+}
   

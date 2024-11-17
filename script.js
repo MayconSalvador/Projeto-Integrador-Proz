@@ -17,7 +17,7 @@ function checkInputnome(){
 const nomeValue = nome.value;
 // Verificar se o nome está preenchido
 if (nome.value === "") {
-   errorInput(nome,"Por favor, preencha o seu nome!");
+   errorInput(nome,"campo obrigatório.");
  } else {
     const formItem = nome.parentElement;
     formItem.className ="form-group"
@@ -27,10 +27,10 @@ if (nome.value === "") {
 function checkEmail(){ 
     const emailValue= email.value;
 if(emailValue === "" ) {
-    errorInput (email,"campo obrigatório")
+    errorInput (email,"campo obrigatório.")
 
 }else if (!isValidEmail(email.value)){
-errorInput(email,"preecha um email válido")
+errorInput(email,"email inválido")
 }else {
      const formItem =email.parentElement;
      formItem.className ="form-group"
